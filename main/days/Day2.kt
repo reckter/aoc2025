@@ -27,7 +27,6 @@ class Day2 : Day {
 	        .map { (from,to) -> from.toLong()..to.toLong()}
 	        .flatten()
 	        .filter { !checkValid(it) }
-	        .print("")
 	        .sum()
 	        .solution(1)
     }
@@ -54,9 +53,8 @@ class Day2 : Day {
 			.map { (from,to) -> from.toLong()..to.toLong()}
 			.flatten()
 			.filter { !checkValid2(it) }
-			.print("")
 			.sum()
-			.solution(1)
+			.solution(2)
     }
 }
 
