@@ -1,6 +1,9 @@
 package me.reckter.aoc.cords.d3
 
 import java.lang.Math.abs
+import java.lang.Math.pow
+import kotlin.math.pow
+import kotlin.math.sqrt
 
 /**
  *           3D
@@ -44,3 +47,10 @@ fun Coord3D<Int>.getNeighbors(noEdges: Boolean = false): List<Coord3D<Int>> {
 }
 
 fun Coord3D<Int>.manhattenDistance(to: Coord3D<Int>): Int = abs(this.x - to.x) + abs(this.y - to.y) + abs(this.z - to.z)
+fun Coord3D<Int>.euclidDistanceForSorting(to: Coord3D<Int>): Double = (this.x.toDouble() - to.x).pow(2.0) + (this.y.toDouble() - to.y).pow(
+	2.0
+) + (this.z.toDouble() - to.z).pow(
+	2.0
+)
+fun Coord3D<Int>.euclidDistance(to: Coord3D<Int>): Double = sqrt(this.euclidDistanceForSorting(to))
+
