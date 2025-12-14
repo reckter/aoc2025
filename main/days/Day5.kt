@@ -1,13 +1,10 @@
 package me.reckter.aoc.days
 
 import me.reckter.aoc.Day
-import me.reckter.aoc.allCombinations
-import me.reckter.aoc.allPairings
 import me.reckter.aoc.parseWithRegex
 import me.reckter.aoc.solution
 import me.reckter.aoc.solve
 import me.reckter.aoc.splitAtEmptyLine
-import me.reckter.aoc.toIntegers
 import me.reckter.aoc.toLongs
 
 class Day5 : Day {

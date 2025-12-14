@@ -56,7 +56,6 @@ class Day1 : Day {
 				val count = foldCount + (if (next < 0 && cur == 0) -1 else 0)
 
 
-				println("${cur} ${turn} ${distance} > ${realNext} -> ${count}")
 				(realNext to count)
 			}
 			.sumOf { it.second }
